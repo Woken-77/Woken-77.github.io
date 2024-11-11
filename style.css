@@ -24,7 +24,7 @@ h1, h2 {
   position: relative;
   width: 80%;
   margin: 20px auto;
-  overflow: hidden;
+  overflow: hidden; /* Oculta las imágenes fuera de la vista */
 }
 
 .carousel-slide {
@@ -48,6 +48,7 @@ h1, h2 {
   font-size: 30px;
   padding: 10px;
   cursor: pointer;
+  z-index: 10; /* Asegura que las flechas estén sobre las imágenes */
 }
 
 .carousel-prev {
