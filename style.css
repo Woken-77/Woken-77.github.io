@@ -1,29 +1,49 @@
-let currentIndex = 0;
-const slides = document.querySelectorAll('.carousel-slide img');
-const totalSlides = slides.length;
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-// Botón "siguiente"
-document.querySelector('.next').addEventListener('click', () => {
-  if (currentIndex < totalSlides - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0; // Volver al inicio
-  }
-  updateCarousel();
-});
+/* Carrusel Contenedor */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
 
-// Botón "anterior"
-document.querySelector('.prev').addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = totalSlides - 1; // Volver al final
-  }
-  updateCarousel();
-});
+/* Estilo para las imágenes del carrusel */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
 
-// Función para mover las imágenes
-function updateCarousel() {
-  const slideWidth = slides[0].clientWidth; // Ancho de una imagen
-  document.querySelector('.carousel-slide').style.transform = `translateX(${-slideWidth * currentIndex}px)`;
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Estilos de los botones del carrusel */
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
 }
