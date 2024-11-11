@@ -1,38 +1,30 @@
-// Variables
-const prevBtn = document.querySelector('.carousel-prev');
-const nextBtn = document.querySelector('.carousel-next');
-const slides = document.querySelector('.carousel-slide');
-let index = 0; // Índice de la imagen actual
+let currentIndex = 0;
 
-// Función para mostrar la siguiente imagen
-function nextSlide() {
-  if (index >= slides.children.length - 1) {
-    index = 0; // Vuelve al inicio del carrusel
-  } else {
-    index++;
-  }
-  updateCarousel();
-}
+const images = document.querySelectorAll('.carousel-slide img');
+const totalImages = images.length;
 
-// Función para mostrar la imagen anterior
-function prevSlide() {
-  if (index <= 0) {
-    index = slides.children.length - 1; // Va al final del carrusel
-  } else {
-    index--;
-  }
-  updateCarousel();
-}
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
 
-// Función para actualizar la posición del carrusel
 function updateCarousel() {
-  const width = slides.children[0].clientWidth;
-  slides.style.transform = `translateX(-${index * width}px)`;
+  const newTransformValue = -currentIndex * 100;
+  document.querySelector('.carousel-slide').style.transform = `translateX(${newTransformValue}%)`;
 }
 
-// Eventos para los botones
-nextBtn.addEventListener('click', nextSlide);
-prevBtn.addEventListener('click', prevSlide);
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = totalImages - 1; // Loop back to last image
+  }
+  updateCarousel();
+});
 
-// Opcional: Reproducir el carrusel automáticamente cada 5 segundos
-setInterval(nextSlide, 5000); // Cambia cada 5 segundos
+nextButton.addEventListener('click', () => {
+  if (currentIndex < totalImages - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0; // Loop back to first image
+  }
+  updateCarousel();
+});
