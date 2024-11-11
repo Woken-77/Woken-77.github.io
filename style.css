@@ -23,8 +23,9 @@ h1, h2 {
 .carousel-container {
   position: relative;
   width: 80%;
+  max-width: 800px; /* Limita el tamaño máximo en pantallas grandes */
   margin: 20px auto;
-  overflow: hidden; /* Oculta las imágenes fuera de la vista */
+  overflow: hidden;
 }
 
 .carousel-slide {
@@ -48,7 +49,7 @@ h1, h2 {
   font-size: 30px;
   padding: 10px;
   cursor: pointer;
-  z-index: 10; /* Asegura que las flechas estén sobre las imágenes */
+  z-index: 10;
 }
 
 .carousel-prev {
