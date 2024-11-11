@@ -34,9 +34,10 @@ h1, h2 {
 }
 
 .carousel-slide img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 100%;  /* Asegura que la imagen ocupe el 100% del contenedor */
+  height: 100%;  /* Hace que la imagen tenga la misma altura que el contenedor */
+  object-fit: cover;  /* Asegura que la imagen cubra el área sin deformarse */
+  background-color: #fff;  /* Fondo blanco si la imagen es más pequeña que el contenedor */
 }
 
 .carousel-prev, .carousel-next {
@@ -60,31 +61,4 @@ h1, h2 {
   right: 10px;
 }
 
-.carousel-prev:hover, .carousel-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-#prices {
-  background-color: #ecf0f1;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.pricing-card {
-  background-color: white;
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #ddd;
-  display: inline-block;
-  width: 30%;
-  box-sizing: border-box;
-}
-
-.pricing-card h3 {
-  margin-top: 0;
-}
-
-.pricing-card p {
-  font-size: 1.2em;
-  color: #e74c3c;
-}
+.caro
