@@ -3,6 +3,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#intro {
+  background-color: #3498db;
+  color: white;
+  padding: 50px 20px;
+}
+
+#portfolio {
+  padding: 40px 20px;
 }
 
 .carousel-container {
@@ -45,4 +60,29 @@ body {
 
 .carousel-prev:hover, .carousel-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+#prices {
+  background-color: #ecf0f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.pricing-card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.pricing-card h3 {
+  margin-top: 0;
+}
+
+.pricing-card p {
+  font-size: 1.2em;
+  color: #e74c3c;
 }
