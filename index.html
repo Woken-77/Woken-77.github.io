@@ -3,22 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Carrusel</title>
-  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="carousel-container">
-    <button class="carousel-prev">&#10094;</button>
-    <div class="carousel-slide">
-      <img src="images/image-1.jpeg" alt="Imagen 1">
-      <img src="images/image-2.png" alt="Imagen 2">
-      <img src="images/image-3.jpeg" alt="Imagen 3">
-      <img src="images/image-4.png" alt="Imagen 4">
-      <img src="images/image-5.png" alt="Imagen 5">
-      <img src="images/image-6.png" alt="Imagen 6">
+  <!-- Sección de Introducción -->
+  <section id="intro">
+    <h1>Hola, soy [Tu Nombre]</h1>
+    <p>Soy un modelador 3D especializado en crear personajes y entornos para videojuegos. Aquí podrás ver algunos de mis trabajos y descubrir más sobre mis servicios.</p>
+  </section>
+
+  <!-- Sección de Carrusel de Fotos -->
+  <section id="portfolio">
+    <h2>Mi Trabajo</h2>
+    <div class="carousel-container">
+      <button class="carousel-prev">&#10094;</button>
+      <div class="carousel-slide">
+        <img src="images/imagen1.png" alt="Imagen 1">
+        <img src="images/imagen2.png" alt="Imagen 2">
+        <img src="images/imagen3.png" alt="Imagen 3">
+      </div>
+      <button class="carousel-next">&#10095;</button>
     </div>
-    <button class="carousel-next">&#10095;</button>
-  </div>
+  </section>
+
+  <!-- Sección de Precios -->
+  <section id="prices">
+    <h2>Precios</h2>
+    <div class="pricing-card">
+      <h3>Modelo Básico</h3>
+      <p>$200 - Un personaje simple con texturas básicas.</p>
+    </div>
+    <div class="pricing-card">
+      <h3>Modelo Intermedio</h3>
+      <p>$400 - Un personaje con detalles avanzados y texturas complejas.</p>
+    </div>
+    <div class="pricing-card">
+      <h3>Modelo Completo</h3>
+      <p>$600 - Personaje de alta calidad con animaciones y texturización detallada.</p>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
