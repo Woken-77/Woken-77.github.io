@@ -46,6 +46,32 @@
         .social-links a:hover {
             text-decoration: underline;
         }
+
+        /* Estilos para los proyectos del portafolio */
+        .portfolio-project {
+            margin-bottom: 40px;
+            background-color: #1E1E1E; /* Fondo oscuro para proyectos */
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .portfolio-project h3 {
+            font-size: 28px;
+            color: #0A84FF; /* Título del proyecto en azul */
+            margin-bottom: 10px;
+        }
+        .portfolio-project .project-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .portfolio-project .project-details {
+            color: #CCCCCC;
+            margin-top: 15px;
+        }
+        .portfolio-project .project-details p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -72,7 +98,39 @@
         <section id="portfolio">
             <h2>Portafolio</h2>
             <p>Mis proyectos más impresionantes:</p>
-            <!-- Aquí añadiremos una galería más adelante -->
+            
+            <!-- Proyecto 1 -->
+            <div class="portfolio-project">
+                <h3>Proyecto 1: Modelado de Personaje 3D</h3>
+                <img src="render1.jpg" alt="Render del Proyecto 1" class="project-image">
+                <div class="project-details">
+                    <p>Descripción: Este es un personaje 3D modelado en Blender, enfocado en detalles realistas para videojuegos.</p>
+                    <p>Vértices: 500,000 | Texturas: 2K | Software: Blender</p>
+                    <p>Contexto: El proyecto se diseñó para un videojuego de acción y aventura en entornos urbanos.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="portfolio-project">
+                <h3>Proyecto 2: Diseño de Escenario 3D</h3>
+                <img src="render2.jpg" alt="Render del Proyecto 2" class="project-image">
+                <div class="project-details">
+                    <p>Descripción: Un escenario detallado para una película de animación, con un enfoque en iluminación y atmósfera.</p>
+                    <p>Vértices: 300,000 | Texturas: 4K | Software: Maya</p>
+                    <p>Contexto: Este escenario se diseñó para representar un mundo post-apocalíptico.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="portfolio-project">
+                <h3>Proyecto 3: Animación de Personaje 3D</h3>
+                <img src="render3.jpg" alt="Render del Proyecto 3" class="project-image">
+                <div class="project-details">
+                    <p>Descripción: Animación de un personaje 3D que camina y salta, realizada en Blender.</p>
+                    <p>Vértices: 700,000 | Texturas: 2K | Software: Blender</p>
+                    <p>Contexto: Esta animación fue creada para un demo técnico de un juego en desarrollo.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Sección de Contacto -->
@@ -92,3 +150,4 @@
     </footer>
 </body>
 </html>
+
