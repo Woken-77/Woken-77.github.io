@@ -6,8 +6,8 @@
     <meta name="description" content="Portafolio de modelado 3D de Woken - Diseños profesionales y detallados">
     <title>Woken 3D Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS externo -->
-    <!-- Agregar Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- FontAwesome para los íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         /* Estilos básicos inline para empezar rápidamente */
         body {
@@ -43,10 +43,10 @@
             color: #0A84FF;
             text-decoration: none;
             margin: 0 10px;
-            font-size: 18px;
+            font-size: 24px;
         }
         .social-links a:hover {
-            text-decoration: underline;
+            color: #0A84FF;
         }
 
         /* Estilos para los proyectos del portafolio */
@@ -74,6 +74,17 @@
         .portfolio-project .project-details p {
             margin: 5px 0;
         }
+        
+        /* Logo debajo del header */
+        .logo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+            width: 200px; /* Tamaño adecuado para el logo */
+        }
     </style>
 </head>
 <body>
@@ -85,8 +96,12 @@
             <a href="#portfolio">Portafolio</a>
             <a href="#contact">Contacto</a>
         </nav>
-        <img src="images/LOGO-WOKEN.jpg" alt="Logo de Woken 3D" class="logo">
     </header>
+
+    <!-- Contenedor para el Logo debajo del Header -->
+    <div class="logo-container">
+        <img src="images/LOGO-WOKEN.jpg" alt="Logo de Woken 3D">
+    </div>
 
     <!-- Contenido Principal -->
     <main class="container">
@@ -141,30 +156,11 @@
             <h2>Contacto</h2>
             <p>¿Quieres colaborar o tienes alguna consulta? Escríbeme.</p>
             <div class="social-links">
-                <!-- Ícono de Instagram -->
-                <p>Sígueme en Instagram: 
-                    <a href="https://instagram.com/wp_adriano" target="_blank">
-                        <i class="fab fa-instagram"></i> @wp_adriano
-                    </a>
-                </p>
-                <!-- Ícono de correo electrónico -->
-                <p>Contáctame directamente por correo: 
-                    <a href="mailto:tuemail@dominio.com">
-                        <i class="fas fa-envelope"></i> tuemail@dominio.com
-                    </a>
-                </p>
-                <!-- Ícono de X (antes Twitter) -->
-                <p>Sígueme en X: 
-                    <a href="https://x.com/BIS_Woken" target="_blank">
-                        <i class="fab fa-x"></i> @BIS_Woken
-                    </a>
-                </p>
-                <!-- Ícono de Sketchfab -->
-                <p>Explora mis modelos en Sketchfab: 
-                    <a href="https://sketchfab.com/Adriano_Castro" target="_blank">
-                        <i class="fab fa-sketchfab"></i> @Adriano_Castro
-                    </a>
-                </p>
+                <!-- Iconos de redes sociales -->
+                <a href="https://x.com/BIS_Woken" target="_blank"><i class="fab fa-x"></i></a>
+                <a href="https://sketchfab.com/Adriano_Castro" target="_blank"><i class="fab fa-sketch"></i></a>
+                <a href="https://instagram.com/wp_adriano" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:tuemail@dominio.com"><i class="fas fa-envelope"></i></a>
             </div>
         </section>
     </main>
@@ -175,3 +171,4 @@
     </footer>
 </body>
 </html>
+
